@@ -7,7 +7,7 @@ including weather forecasting, current conditions, and location search capabilit
 
 from typing import List, Dict, Any
 from datetime import datetime
-from mcp.server.fastmcp import FastMCP, Context
+from mcp.server.fastmcp import FastMCP
 
 from .models import (
     LocationInfo, CurrentWeather, WeatherForecast, DailyForecast,
@@ -58,7 +58,7 @@ def register_tools(mcp: FastMCP):
         return result
 
     @mcp.tool()
-    async def get_current_weather(location_name: str, ctx: Context, 
+    async def get_current_weather(location_name: str, 
                                 temperature_unit: str = "celsius") -> CurrentWeather:
         """
         Get current weather conditions for a location.
@@ -67,7 +67,7 @@ def register_tools(mcp: FastMCP):
             location_name: Name of the location (city, region, etc.)
             temperature_unit: Temperature unit ("celsius" or "fahrenheit")
         """
-        location = await resolve_location(location_name, ctx)
+        location = await resolve_location(location_name)
         
         current_params = [
             "temperature_2m", "relative_humidity_2m", "weather_code",
@@ -98,7 +98,7 @@ def register_tools(mcp: FastMCP):
         )
 
     @mcp.tool()
-    async def get_weather_forecast(location_name: str, ctx: Context,
+    async def get_weather_forecast(location_name: str,
                                  forecast_days: int = 7,
                                  temperature_unit: str = "celsius") -> WeatherForecast:
         """
@@ -109,7 +109,7 @@ def register_tools(mcp: FastMCP):
             forecast_days: Number of forecast days (1-16, default 7)
             temperature_unit: Temperature unit ("celsius" or "fahrenheit")
         """
-        location = await resolve_location(location_name, ctx)
+        location = await resolve_location(location_name)
         forecast_days = max(1, min(forecast_days, MAX_FORECAST_DAYS))
         
         daily_params = [
@@ -150,7 +150,7 @@ def register_tools(mcp: FastMCP):
         )
 
     @mcp.tool()
-    async def get_hourly_forecast(location_name: str, ctx: Context,
+    async def get_hourly_forecast(location_name: str,
                                 forecast_hours: int = 24,
                                 temperature_unit: str = "celsius") -> HourlyForecast:
         """
@@ -161,7 +161,7 @@ def register_tools(mcp: FastMCP):
             forecast_hours: Number of forecast hours (1-168, default 24)
             temperature_unit: Temperature unit ("celsius" or "fahrenheit")
         """
-        location = await resolve_location(location_name, ctx)
+        location = await resolve_location(location_name)
         forecast_hours = max(1, min(forecast_hours, MAX_FORECAST_HOURS))
         
         hourly_params = [
@@ -203,14 +203,14 @@ def register_tools(mcp: FastMCP):
         )
 
     @mcp.tool()
-    async def get_weather_alerts(location_name: str, ctx: Context) -> Dict[str, Any]:
+    async def get_weather_alerts(location_name: str) -> Dict[str, Any]:
         """
         Check for severe weather conditions and alerts for a location.
         
         Args:
             location_name: Name of the location (city, region, etc.)
         """
-        location = await resolve_location(location_name, ctx)
+        location = await resolve_location(location_name)
         
         # Get current and near-term forecast for alert analysis
         current_params = ["temperature_2m", "weather_code", "wind_speed_10m", "precipitation"]

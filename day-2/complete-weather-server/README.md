@@ -18,12 +18,6 @@ This MCP server interfaces with the [Open-Meteo API](https://open-meteo.com/en/d
   - [Claude.ai account](https://claude.ai) (MCP support is available for all account types)
   - [Claude Desktop app](https://claude.ai/download), available for macOS and Windows
 
-## Installation
-
-```bash
-uv sync
-```
-
 ## Development
 
 ### 1. Set up the uv environment
@@ -55,6 +49,32 @@ deactivate
 ```bash
 uv run mcp dev mcp_open_meteo/server.py
 ```
+
+## Run MCP server in VS Code
+
+1. Open the Command Palette Shift + CMD/CTRL + P
+
+2. Select "MCP: Open User Configuration". This opens `mcp.json`
+
+3. In `mcp.json`:
+
+  ```json
+  {
+    "servers": {
+      "weather-server": {
+        "type": "stdio",
+        "command": "uv",
+        "args": [
+          "run",
+          "--directory",
+          "/absolute/path/to/weather-server",
+          "mcp-open-meteo"
+        ]
+      }
+    },
+    "inputs": []
+  }
+  ```
 
 ## Run MCP server in Claude Desktop
 

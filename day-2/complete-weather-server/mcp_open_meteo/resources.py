@@ -16,8 +16,7 @@ def register_resources(mcp: FastMCP):
     @mcp.resource("weather://current/{location_name}")
     async def current_weather_resource(location_name: str) -> str:
         """Get current weather as a resource"""
-        # Note: Resources can't use Context for elicitation, so this is a simplified version
-        # that will use the first search result if multiple locations are found
+        # Use the first search result if multiple locations are found
         locations = await search_locations(location_name, limit=1)
         if not locations:
             return f"No location found for '{location_name}'"

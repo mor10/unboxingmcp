@@ -2,11 +2,11 @@
 Data models for the Open-Meteo Weather MCP Server.
 
 This module contains all Pydantic models used for structured data representation
-in the weather API responses and elicitation schemas.
+in the weather API responses.
 """
 
 from typing import List, Optional
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 
 
 class LocationInfo(BaseModel):
@@ -21,11 +21,6 @@ class LocationInfo(BaseModel):
     timezone: str
     population: Optional[int] = None
     elevation: Optional[float] = None
-
-
-class LocationChoice(BaseModel):
-    """Schema for location selection elicitation"""
-    selected_location_id: int = Field(description="ID of the selected location")
 
 
 class CurrentWeather(BaseModel):

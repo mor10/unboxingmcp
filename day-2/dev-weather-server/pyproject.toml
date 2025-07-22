@@ -1,0 +1,33 @@
+[project]
+name = "mcp-open-meteo"
+version = "0.1.0"
+description = "Comprehensive MCP server demo using FastMCP to build resources and tools utilizing the Open-Meteo weather and geocoding APIs."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "mor10"}]
+keywords = ["mcp", "fastmcp", "llm", "vscode", "weather", "open-meteo"]
+license = { text = "MIT" }
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.11.0",
+    "pydantic>=2.11.7",
+]
+
+[project.scripts]
+mcp-open-meteo = "mcp_open_meteo.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = []
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.uv]
+package = true
+dev-dependencies = ["ruff>=0.12.3"]
