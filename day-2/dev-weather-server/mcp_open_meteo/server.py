@@ -2,7 +2,7 @@
 """
 Open-Meteo Weather MCP Server
 
-A weather server that uses Open-Meteo APIs for location geocoding and weather forecasting.
+A weather server that uses Open-Meteo APIs for weather forecasting using coordinates.
 This example demonstrates clean MCP server development.
 """
 

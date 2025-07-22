@@ -5,27 +5,14 @@ This module contains all Pydantic models used for structured data representation
 in the weather API responses.
 """
 
-from typing import List, Optional
+from typing import List
 from pydantic import BaseModel
-
-
-class LocationInfo(BaseModel):
-    """Location information from geocoding API"""
-    id: int
-    name: str
-    latitude: float
-    longitude: float
-    country: str
-    admin1: Optional[str] = None  # State/Province
-    admin2: Optional[str] = None  # County/Region
-    timezone: str
-    population: Optional[int] = None
-    elevation: Optional[float] = None
 
 
 class CurrentWeather(BaseModel):
     """Current weather conditions"""
-    location: LocationInfo
+    latitude: float
+    longitude: float
     temperature: float
     temperature_unit: str
     humidity: int
@@ -56,7 +43,8 @@ class DailyForecast(BaseModel):
 
 class WeatherForecast(BaseModel):
     """Multi-day weather forecast"""
-    location: LocationInfo
+    latitude: float
+    longitude: float
     forecast_days: List[DailyForecast]
     generated_at: str
 
@@ -76,7 +64,8 @@ class HourlyWeatherPoint(BaseModel):
 
 class HourlyForecast(BaseModel):
     """Hourly weather forecast"""
-    location: LocationInfo
+    latitude: float
+    longitude: float
     hourly_data: List[HourlyWeatherPoint]
     temperature_unit: str
     precipitation_unit: str

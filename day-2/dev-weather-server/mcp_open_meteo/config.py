@@ -6,7 +6,6 @@ configuration constants used throughout the application.
 """
 
 # API Endpoints
-GEOCODING_API_URL = "https://geocoding-api.open-meteo.com/v1/search"
 WEATHER_API_URL = "https://api.open-meteo.com/v1/forecast"
 
 # Default Parameters
@@ -17,7 +16,6 @@ DEFAULT_FORECAST_DAYS = 7
 DEFAULT_FORECAST_HOURS = 24
 MAX_FORECAST_DAYS = 16
 MAX_FORECAST_HOURS = 168
-MAX_LOCATION_SEARCH_RESULTS = 100
 
 # Weather Alert Thresholds
 HIGH_WIND_THRESHOLD_KMH = 50  # km/h
