@@ -5,19 +5,16 @@ This module contains all the tool functions that are exposed via the MCP server,
 including weather forecasting and current conditions using latitude and longitude coordinates.
 """
 
-from typing import Dict, Any
 from datetime import datetime
 from mcp.server.fastmcp import FastMCP
 
 from .models import (
-    CurrentWeather, WeatherForecast, DailyForecast,
-    HourlyForecast, HourlyWeatherPoint
+    CurrentWeather, WeatherForecast, DailyForecast
 )
 from .api_client import get_weather_data
 from .constants import weather_code_to_description
 from .config import (
-    MAX_FORECAST_DAYS, MAX_FORECAST_HOURS, HIGH_WIND_THRESHOLD_KMH,
-    SEVERE_WEATHER_CODES, FREEZING_RAIN_CODES, SNOW_CODES
+    MAX_FORECAST_DAYS
 )
 
 

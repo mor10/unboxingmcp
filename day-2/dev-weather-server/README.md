@@ -124,3 +124,22 @@ uv run mcp install mcp_open_meteo/server.py
    }
    ```
 
+## Latitudes and Longitudes for testing
+| Location      | Country Code | Latitude | Longitude |
+| ------------- | ------------ | -------- | --------- |
+| Amman         | JO           | 31.9539  | 35.9106   |
+| Bangkok       | TH           | 13.7563  | 100.5018  |
+| Berlin        | DE           | 52.5200  | 13.4050   |
+| Bogotá        | CO           | 4.7110   | -74.0721  |
+| Cairo         | EG           | 30.0444  | 31.2357   |
+| London        | CA           | 42.9849  | -81.2453  |
+| London        | GB           | 51.5074  | -0.1278   |
+| Lusaka        | ZM           | -15.3875 | 28.3228   |
+| Manila        | PH           | 14.5995  | 120.9842  |
+| Melbourne     | AU           | -37.8136 | 144.9631  |
+| New York City | US           | 40.7128  | -74.0060  |
+| Oslo          | NO           | 59.9139  | 10.7522   |
+| San José      | CR           | 9.9281   | -84.0907  |
+| Tokyo         | JP           | 35.6895  | 139.6917  |
+| Vancouver     | CA           | 49.2827  | -123.1207 |
+
