@@ -20,9 +20,9 @@ class FridgeManager:
             csv_path: Path to the CSV file. If None, uses default path.
         """
         if csv_path is None:
-            # Default to data/fridge_contents.csv relative to this file
+            # Default to fridge_contents.csv in the same directory as this file
             current_dir = Path(__file__).parent
-            self.csv_path = current_dir / "data" / "fridge_contents.csv"
+            self.csv_path = current_dir / "fridge_contents.csv"
         else:
             self.csv_path = Path(csv_path)
             
