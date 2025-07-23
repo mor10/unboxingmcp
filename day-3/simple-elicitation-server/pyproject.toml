@@ -1,5 +1,5 @@
 [project]
-name = "simple-mcp-server"
+name = "simple-mcp-elicitation-server"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -9,8 +9,7 @@ dependencies = [
 ]
 
 [project.scripts]
-simple-mcp-server = "server:main"
-
+simple-mcp-elicitation-server = "server:main"
 
 [tool.uv]
 package = true

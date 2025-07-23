@@ -537,7 +537,7 @@ wheels = [
 ]
 
 [[package]]
-name = "simple-mcp-server"
+name = "simple-mcp-elicitation-server"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
