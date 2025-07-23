@@ -8,25 +8,30 @@ This repository contains all the example files for the Unboxing MCP livestream h
 
 Links persist after the event is over:
 
-💡 Mon, Jul 21 — Day 1: MCP Explained
- 👉 No-hype, just real-world demos how to use MCP and why it matters.
-🔗 https://lnkd.in/gzFpT556
+__Day 1: MCP Explained__  
+_Mon, Jul 21, 2025_  
+No-hype, just real-world demos how to use MCP and why it matters.  
+Livestream link: [https://lnkd.in/gzFpT556](https://lnkd.in/gzFpT556)
 
-🧑‍💻 Tue, Jul 22 — Day 2: Let's Build an MCP Server!
- 👉 Hands-on demo: connect AI to anything with your own MCP server.
-🔗 https://lnkd.in/gCMXGdQk
+__Day 2: Let's Build an MCP Server!__  
+_Tue, Jul 22, 2025_  
+Hands-on demo: connect AI to anything with your own MCP server.  
+Livestream link: [https://lnkd.in/gCMXGdQk](https://lnkd.in/gCMXGdQk)
 
-🧪 Wed, Jul 23 — Day 3: The Bleeding Edge 
- 👉 Explore cutting-edge MCP features: elicitations, dxt files, and beyond.
-🔗 https://lnkd.in/gqixCgc7
+__Day 3: The Bleeding Edge__  
+_Wed, Jul 23, 2025_  
+Explore cutting-edge MCP features: elicitations, and more.  
+Livestream link: [https://lnkd.in/gqixCgc7](https://lnkd.in/gqixCgc7)
 
-🔐 Thu, Jul 24 — Day 4: MCP Security
- 👉 How to secure and authenticate MCP servers with mission-critical data.
-🔗 https://lnkd.in/gaMbaggT
+__Day 4: MCP Security__  
+_Thu, Jul 24, 2025_  
+How to secure and authenticate MCP servers with mission-critical data.  
+Livestream link: [https://lnkd.in/gaMbaggT](https://lnkd.in/gaMbaggT)
 
-🌐 Fri, Jul 25 — Day 5: Publishing Your MCP Server
- 👉 From local to public: give everyone access to new capabilities.
-🔗 https://lnkd.in/g-qzjWCR
+__Day 5: Publishing Your MCP Server__  
+_Fri, Jul 25, 2025_  
+From local to public: give everyone access to new capabilities.  
+Livestream link: [https://lnkd.in/g-qzjWCR](https://lnkd.in/g-qzjWCR)
 
 ## How to use this repo
 
