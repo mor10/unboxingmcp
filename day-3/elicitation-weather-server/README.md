@@ -66,7 +66,7 @@ uv run mcp dev mcp_open_meteo_elicit/server.py
         "args": [
           "run",
           "--directory",
-          "/absolute/path/to/weather-server",
+          "/absolute/path/to/elicitation-weather-server",
           "mcp-open-meteo-elicit"
         ]
       }
@@ -118,7 +118,7 @@ uv run mcp install mcp_open_meteo_elicit/server.py
           "mcp[cli]",
           "mcp",
           "run",
-          "/absolute/path/to/weather-server/mcp_open_meteo_elicit/server.py"
+          "/absolute/path/to/elicitation-weather-server/mcp_open_meteo_elicit/server.py"
         ]
       }
     }
