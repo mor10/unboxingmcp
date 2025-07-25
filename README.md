@@ -26,7 +26,7 @@ Livestream link: [https://lnkd.in/gqixCgc7](https://lnkd.in/gqixCgc7)
 __Day 4: MCP Security__  
 _Thu, Jul 24, 2025_  
 How to secure and authenticate MCP servers with mission-critical data.  
-Livestream link: [https://lnkd.in/gaMbaggT](https://lnkd.in/gaMbaggT)
+Livestream link: [https://www.linkedin.com/events/7354256453504831488/](https://www.linkedin.com/events/7354256453504831488/)
 
 __Day 5: Publishing Your MCP Server__  
 _Fri, Jul 25, 2025_  
