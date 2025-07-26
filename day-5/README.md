@@ -158,7 +158,7 @@ npx wrangler secret put COOKIE_ENCRYPTION_KEY # add any random string here e.g. 
 #### Step 2: Set up a KV namespace
 - Create the KV namespace: 
 ```bash
-npx wrangler kv:namespace create "OAUTH_KV"
+npx wrangler kv namespace create "OAUTH_KV"
 ```
 - Update the `wrangler.jsonc` file with the resulting KV ID:
 
