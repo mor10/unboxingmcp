@@ -31,11 +31,11 @@ Livestream link: [https://www.linkedin.com/events/7354256453504831488/](https://
 __Day 5: Publishing Your MCP Server__  
 _Fri, Jul 25, 2025_  
 From local to public: give everyone access to new capabilities.  
-Livestream link: [https://lnkd.in/g-qzjWCR](https://lnkd.in/g-qzjWCR)
+Livestream link: [https://www.linkedin.com/video/live/urn:li:ugcPost:7355362901500551168/](https://www.linkedin.com/video/live/urn:li:ugcPost:7355362901500551168/)
 
 ## How to use this repo
 
-The repo contains folders for Day 2, 3, 4, and 5. Each folder contains one or more MCP server projects. Each sub-project has a `README.md` file with detailed instructions on how to use it. Some folders contain completed MCP servers, others contain challenges, half-completed projects, or other materials.
+The repo contains folders for Day 2, 3, and 5. Each folder contains one or more MCP server projects. Each sub-project has a `README.md` file with detailed instructions on how to use it. Some folders contain completed MCP servers, others contain challenges, half-completed projects, or other materials.
 
 These files are provided as-is and are provided for your exploration and experimentation. Fork the repo, pick things apart, put them back together again, and make this your sandbox as you learn how to build and use MCP servers!
 
