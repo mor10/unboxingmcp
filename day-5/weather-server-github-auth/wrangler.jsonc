@@ -10,11 +10,15 @@
 	"compatibility_flags": [
 		"nodejs_compat"
 	],
-	"vars": {
-		"GITHUB_CLIENT_ID": "1234567890",
-		"GITHUB_CLIENT_SECRET": "1234567890",
-		"COOKIE_ENCRYPTION_KEY": "1234567890"
-	},
+	/**
+	 * Note: Use secrets to store sensitive data.
+	 * https://developers.cloudflare.com/workers/configuration/secrets/
+	 * 
+	 * Commands to set secrets:
+	 * npx wrangler secret put GITHUB_CLIENT_ID
+	 * npx wrangler secret put GITHUB_CLIENT_SECRET
+	 * npx wrangler secret put COOKIE_ENCRYPTION_KEY
+	 */
 	"migrations": [
 		{
 			"new_sqlite_classes": [
